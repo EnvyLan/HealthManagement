@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.locale" value="zh_CN"></constant>
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<!-- struts2的action必须放在一个指定的包空间下定义 -->
+	<package name="com.zcf.action" extends="json-default">
+		<!-- 定义处理请求URL为login.action的Action -->
+		<action name="student" class="com.zcf.action.StudentAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="loadProject" class="com.zcf.action.ProjectAction">
+			<result name="showStuProject">/stuProject.jsp</result>
+			<result name="showRecord">/stuProjectRecord.jsp</result>
+		</action>
+		<action name="addRecord" class="com.zcf.action.ProjectRecordAction">
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-6-2 9:46:04 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="com.zcf.bean.BeanProjectRecord" table="project_detail">
+		<id name="detailId" type="int">
+			<column name="detail_id" />
+			<generator class="assigned" />
+		</id>
+		<property name="stuId" type="int">
+			<column name="stu_id" />
+		</property>
+		<property name="projectId" type="int">
+			<column name="project_id"></column>
+		</property>
+		<property name="stuHeight" type="double">
+			<column name="stu_height" />
+		</property>
+		<property name="stuArmSize" type="double">
+			<column name="stu_arm_size"></column>
+		</property>
+		<property name="stuWeight" type="double">
+			<column name="stu_weight" />
+		</property>
+		<property name="stu100mSpeed" type="double">
+			<column name="stu_100m_speed" />
+		</property>
+		<property name="stuToughHeight" type="double">
+			<column name="stu_tough_height" />
+		</property>
+		<property name="stuRunBack" type="double">
+			<column name="stu_run_back" />
+		</property>
+		<property name="stuRunWithBall" type="double">
+			<column name="stu_run_with_ball" />
+		</property>
+		<property name="stuResponseTime" type="double">
+			<column name="stu_response_time" />
+		</property>
+		<property name="stuHandSize" type="double">
+			<column name="stu_hand_size" />
+		</property>
+		<property name="stuJump" type="double">
+			<column name="stu_jump" />
+		</property>
+		<property name="stuShootBall" type="double">
+			<column name="stu_shoot_ball" />
+		</property>
+		<property name="stuHeart" type="double">
+			<column name="stu_heart" />
+		</property>
+		<property name="stuGrade" type="double">
+			<column name="stu_grade" />
+		</property>
+		<property name="gradeTime" type="java.util.Date">
+			<column name="grade_time" />
+		</property>
+	</class>
+</hibernate-mapping>
+		
